@@ -16,5 +16,5 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'imagepicker' do
-    pod 'SwiftyJSON', '~> 3.1'
+    pod 'SwiftyJSON', :git =>'https://github.com/SwiftyJSON/SwiftyJSON.git'
 end

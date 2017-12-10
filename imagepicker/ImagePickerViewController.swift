@@ -64,7 +64,8 @@ extension ViewController {
             
             
             // Use SwiftyJSON to parse results
-            let json = JSON(data: dataToParse)
+            let json = try! JSON(data: dataToParse)
+            print(json)
             let errorObj: JSON = json["error"]
             
             self.spinner.stopAnimating()
